@@ -7,8 +7,8 @@ import Service from "../screens/Service";
 import Account from "../screens/Account";
 import Scan from "../screens/Scan";
 
-import Icon from "../components/Icon";
-import TabLabel from "../components/TabLabel";
+import Icon from "../components/TabBar/Icon";
+import Label from "../components/TabBar/Label";
 
 import { Colors } from "../constants/colors";
 
@@ -18,17 +18,17 @@ const Home = () => {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen
-        name="Home"
+        name="Dashboard"
         component={Dashboard}
         options={{
           tabBarLabel: ({ focused, color }) => (
-            <TabLabel
+            <Label
               focused={focused}
               focusedColor={Colors.black}
               unfocusedColor={Colors.lightgray}
             >
               Home
-            </TabLabel>
+            </Label>
           ),
           tabBarIcon: ({ focused, color, size }) => (
             <Icon
@@ -46,13 +46,13 @@ const Home = () => {
         component={History}
         options={{
           tabBarLabel: ({ focused, color }) => (
-            <TabLabel
+            <Label
               focused={focused}
               focusedColor={Colors.black}
               unfocusedColor={Colors.lightgray}
             >
               History
-            </TabLabel>
+            </Label>
           ),
           tabBarIcon: ({ focused, color, size }) => (
             <Icon
@@ -70,13 +70,13 @@ const Home = () => {
         component={Scan}
         options={{
           tabBarLabel: ({ focused, color }) => (
-            <TabLabel
+            <Label
               focused={focused}
               focusedColor={Colors.black}
               unfocusedColor={Colors.lightgray}
             >
               Scan
-            </TabLabel>
+            </Label>
           ),
           tabBarIcon: ({ focused, color, size }) => (
             <Icon
@@ -94,13 +94,13 @@ const Home = () => {
         component={Service}
         options={{
           tabBarLabel: ({ focused, color }) => (
-            <TabLabel
+            <Label
               focused={focused}
               focusedColor={Colors.black}
               unfocusedColor={Colors.lightgray}
             >
               Service
-            </TabLabel>
+            </Label>
           ),
           tabBarIcon: ({ focused, color, size }) => (
             <Icon
@@ -118,13 +118,13 @@ const Home = () => {
         component={Account}
         options={{
           tabBarLabel: ({ focused, color }) => (
-            <TabLabel
+            <Label
               focused={focused}
               focusedColor={Colors.black}
               unfocusedColor={Colors.lightgray}
             >
               Account
-            </TabLabel>
+            </Label>
           ),
           tabBarIcon: ({ focused, color, size }) => (
             <Icon
