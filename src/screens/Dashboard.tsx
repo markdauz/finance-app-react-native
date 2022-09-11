@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, SafeAreaView, ScrollView } from "react-native";
 import BalanceCard from "../components/Card/BalanceCard";
 import Greeting from "../components/Greeting";
+import DebitCard from "../components/Card/DebitCard";
 
 const Dashboard = () => {
   return (
@@ -15,13 +16,18 @@ const Dashboard = () => {
           cardType="Debit card"
           walletType="E-wallet Top-up"
         />
+        <DebitCard
+          name="HALCA ALANE"
+          account="•••• •••• •••• 6620"
+          detail="Detail Card"
+        />
       </ScrollView>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  wrapper: { flex: 1, alignItems: "flex-start", flexDirection: "column" },
+  wrapper: { flex: 1 },
   innerWrapper: { paddingHorizontal: 20 },
 });
 

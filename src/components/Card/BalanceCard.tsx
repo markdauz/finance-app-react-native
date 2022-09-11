@@ -51,7 +51,8 @@ const styles = StyleSheet.create({
     height: 215,
     backgroundColor: Colors.darkGreen,
     borderRadius: 10,
-    padding: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
   },
   text: { fontWeight: "600", color: Colors.white },
   name: {
