@@ -1,25 +1,25 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
-type GreetingProp = {
+type HeadingProp = {
   children: string;
+  style?: any;
 };
 
-const Greeting = (props: GreetingProp) => {
-  const { children } = props;
+const Heading = (props: HeadingProp) => {
+  const { children, style } = props;
   return (
-    <View style={styles.wrapper}>
+    <View style={style}>
       <Text style={styles.text}>{children}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  wrapper: { maxWidth: 230 },
   text: {
     fontSize: 32,
     lineHeight: 38.73,
     fontWeight: "600",
   },
 });
-export default Greeting;
+export default Heading;
