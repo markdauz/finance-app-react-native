@@ -1,8 +1,10 @@
 import React from "react";
 import { StyleSheet, View, SafeAreaView, ScrollView } from "react-native";
+
 import BalanceCard from "../components/Card/BalanceCard";
 import Greeting from "../components/Greeting";
 import DebitCard from "../components/Card/DebitCard";
+import Person from "../components/Person";
 
 const Dashboard = () => {
   return (
@@ -16,6 +18,20 @@ const Dashboard = () => {
           cardType="Debit card"
           walletType="E-wallet Top-up"
         />
+        <View
+          style={{
+            marginTop: 18,
+            marginBottom: 24,
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <Person name="Lucy" />
+          <Person name="Stacy" />
+          <Person name="Luna" />
+          <Person name="Jane" />
+          <Person name="John" />
+        </View>
         <DebitCard
           name="HALCA ALANE"
           account="•••• •••• •••• 6620"
