@@ -20,8 +20,6 @@ const styles = StyleSheet.create({
     fontSize: 32,
     lineHeight: 38.73,
     fontWeight: "600",
-    marginTop: 78,
-    marginBottom: 24,
   },
 });
 export default Greeting;
