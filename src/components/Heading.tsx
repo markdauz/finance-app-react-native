@@ -8,11 +8,7 @@ type HeadingProp = {
 
 const Heading = (props: HeadingProp) => {
   const { children, style } = props;
-  return (
-    <View style={style}>
-      <Text style={styles.text}>{children}</Text>
-    </View>
-  );
+  return <Text style={[styles.text, style]}>{children}</Text>;
 };
 
 const styles = StyleSheet.create({

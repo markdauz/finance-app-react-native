@@ -1,6 +1,7 @@
 export const Colors = {
   white: "#FFFFFF",
   black: "#000000",
+  gray: "#D2D2D2",
   lightgray: "#7F7F7F",
   green: "#278F02",
   darkGreen: "#238700",
@@ -9,5 +10,6 @@ export const Colors = {
   lightYellow: "#FFF0C1",
   blue: "#153ABE",
   lightBlue: "#4844FF",
+  purple: "#5463FF",
   lightPurple: "#DCDFFF",
 };
