@@ -22,3 +22,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+/**
+ * Credit goes to Kardi, the owner of the Figma Design
+ * https://www.figma.com/community/file/1102813666035750251
+ */

@@ -4,6 +4,7 @@ import { Colors } from "../constants/colors";
 import FormInput from "./FormInput";
 
 type FormProps = {};
+
 const Form = (props: FormProps) => {
   return (
     <View>
