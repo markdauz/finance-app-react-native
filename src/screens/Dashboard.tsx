@@ -6,6 +6,7 @@ import Heading from "../components/Heading";
 import DebitCard from "../components/Card/DebitCard";
 import Person from "../components/Person";
 import LoanCard from "../components/Card/LoanCard";
+import { Colors } from "../constants/colors";
 
 const Dashboard = () => {
   return (
@@ -48,7 +49,7 @@ const Dashboard = () => {
 };
 
 const styles = StyleSheet.create({
-  wrapper: { flex: 1 },
+  wrapper: { flex: 1, backgroundColor: Colors.white },
   innerWrapper: { paddingHorizontal: 20 },
   headingWrapper: { marginTop: 78, marginBottom: 24 },
   personWrapper: {
